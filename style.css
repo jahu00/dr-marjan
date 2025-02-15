@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+/* Basic styling for the game board */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(16, 50px);
+    gap: 2px;
+    width: fit-content;
+}
+
+/* Styling for individual cells */
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Styling for tiles */
+.tile {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    background-color: #ffcccb;
+    border-radius: 50%;
+}
+
+.immobile {
+    border-radius: 0%;
+}
+
+#preview {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(2, 50px);
+    gap: px;
+  }
+  
+.container {
+    position: relative;
+}
+
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    font-weight: bold;
+    /*display: none;*/
+    color: black;
+}
+
+.sidebar {
+    position: absolute;
+    left: 110%;
+    top: 0;
+}
